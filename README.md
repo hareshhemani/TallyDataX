@@ -184,7 +184,7 @@ Clients can run this .exe directly without installing Python or any dependencies
 ## 📂 Project Structure
 
 `
-tallyExtractor/ 
+tallyExtractor/
 ├── app.py              # FastAPI server, REST routes & browser auto-launcher
 ├── tally_client.py     # Tally XML/TDL protocol client & voucher parsing engine
 ├── report_engine.py    # High-speed Excel generator (xlsxwriter & openpyxl)
