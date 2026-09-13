@@ -106,7 +106,8 @@ graph LR
 `
 
 - **Backend**: Python 3.10+, [FastAPI](https://fastapi.tiangolo.com/), [Uvicorn](https://www.uvicorn.org/)
-- **Tally Connector**: equests, native TDL collections via XML over HTTP
+- **Tally Connector**: 
+equests, native TDL collections via XML over HTTP
 - **Excel Engine**: xlsxwriter (ultra-fast generation) & openpyxl (template & formula handling)
 - **Frontend**: HTML5, Tailwind CSS, SheetJS (xlsx), Font Awesome
 - **Packaging**: PyInstaller (single-file Windows portable executable)
@@ -183,7 +184,7 @@ Clients can run this .exe directly without installing Python or any dependencies
 ## 📂 Project Structure
 
 `
-tallyExtractor/
+tallyExtractor/ 
 ├── app.py              # FastAPI server, REST routes & browser auto-launcher
 ├── tally_client.py     # Tally XML/TDL protocol client & voucher parsing engine
 ├── report_engine.py    # High-speed Excel generator (xlsxwriter & openpyxl)
