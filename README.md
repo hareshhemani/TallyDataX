@@ -97,13 +97,13 @@ The generated Excel report and web grid include the following standard columns:
 
 ## 🛠️ Architecture & Tech Stack
 
-`mermaid
+```
 graph LR
     A[Tally Prime / ERP 9<br/>Port 9000 XML Server] <-->|HTTP POST XML / TDL| B[FastAPI Backend<br/>tally_client.py]
     B <-->|Excel Generation| C[Report Engine<br/>xlsxwriter / openpyxl]
     B <-->|REST API / JSON| D[Web Frontend<br/>Tailwind CSS / SheetJS]
     B -.->|PyInstaller| E[Standalone .EXE<br/>TallyDataX_App.exe]
-`
+```
 
 - **Backend**: Python 3.10+, [FastAPI](https://fastapi.tiangolo.com/), [Uvicorn](https://www.uvicorn.org/)
 - **Tally Connector**: 
